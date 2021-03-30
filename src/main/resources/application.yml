@@ -1,0 +1,21 @@
+spring:
+    config:
+        activate:
+            on-profile: dev
+name: OrderManagement
+environment: dev
+enabled: true
+server:
+    port: 8888
+    servlet:
+        context-path: /dev
+
+---
+spring:
+    config:
+        activate:
+            on-profile: prod
+name: OrderManagement
+environment: production
+enabled: false
+  
